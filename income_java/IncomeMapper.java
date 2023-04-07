@@ -9,13 +9,13 @@ import org.apache.hadoop.mapreduce.Mapper;
 import com.opencsv.CSVReader;
 import java.io.StringReader;
 
-public class CountGoodRecordsMapper extends Mapper<LongWritable, Text, Text, Text> {
+public class CountGoodRecordsMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] line = value.toString().split(",");
         String zip = line[3];
-        String health = line[3];
+        String dbh = line[2];
 
-        context.write(new Text(zip), new Text(health));
+        context.write(new Text(zip), new IntWritable(dbh));
     }
 }

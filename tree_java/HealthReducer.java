@@ -3,7 +3,7 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
-public class CountGoodRecordsReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
+public class CountGoodRecordsReducer extends Reducer<Text, IntWritable, Text, Text> {
     @Override
     public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
         int fair = 0;
