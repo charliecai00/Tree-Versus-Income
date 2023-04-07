@@ -22,6 +22,7 @@ public class Health {
         job.setOutputValueClass(Text.class);
 
         job.setNumReduceTasks(1); // 1 Reduce task
+        job.addFileToClassPath(new Path("opencsv-5.7.1.jar"));
 
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }

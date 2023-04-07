@@ -3,7 +3,7 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
-public class CountGoodRecordsReducer extends Reducer<Text, IntWritable, Text, Text> {
+public class HealthReducer extends Reducer<Text, Text, Text, Text> {
     @Override
     public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
         int fair = 0;
@@ -11,13 +11,13 @@ public class CountGoodRecordsReducer extends Reducer<Text, IntWritable, Text, Te
         int poor = 0;
         
         for (Text value : values) {
-            if (value.equals("Fair")) {
+            if (value.toString().equals("Fair")) {
                 fair += 1;
             }
-            if (value.equals("Good")) {
+            if (value.toString().equals("Good")) {
                 good += 1;
             }
-            if (value.equals("Poor")) {
+            if (value.toString().equals("Poor")) {
                 poor += 1;
             }
         }
