@@ -3,18 +3,31 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
-public class CountGoodRecordsReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
-    @Override
-    public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
-        int sum = 0;
+import java.util.ArrayList;
 
-        for (IntWritable value : values) {
-            sum += value.get();
+public class CountGoodRecordsReducer extends Reducer<Text, Text, Text, Text> {
+    @Override
+    public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
+        ArrayList<String> zipcode = new ArrayList<>();
+        ArrayList<String> amount = new ArrayList<>();
+
+        for (Text value : values) {
+            String[] pair = value.toString().split(",");
+            String data = pair[0];
+            String type = pair[1];
+
+            if (type.equals("Z")) {
+                zipcode.add(data);
+              } else {
+                amount.add(data);
+              }
         }
 
-        int avg = sum / values.size();
-        
-        // Write the total count to reducer 
-        context.write(key, new IntWritable(avg));
+        for (String i : zipcode) {
+            for (String j : amount) {
+              context.write(new Text(i), new Text(j));
+            }
+        }
+
     }
 }

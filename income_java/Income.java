@@ -12,14 +12,16 @@ public class Income {
         job.setJarByClass(Income.class);
         job.setJobName("Income");
 
-        FileInputFormat.addInputPath(job, new Path(args[0]));
+        MultipleInputs.addInputPath(job, new Path(args[0]), IncomeMapper1.class);
+        MultipleInputs.addInputPath(job, new Path(args[1]), IncomeMapper2.class);
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
 
-        job.setMapperClass(IncomeMapper.class);
+        job.setMapperClass(IncomeMapper1.class);
+        job.setMapperClass(IncomeMapper2.class);
         job.setReducerClass(IncomeReducer.class);
         
         job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(IntWritable.class);
+        job.setOutputValueClass(Text.class);
 
         job.setNumReduceTasks(1); // 1 Reduce task
         job.addFileToClassPath(new Path("opencsv-5.7.1.jar"));
