@@ -9,7 +9,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 import com.opencsv.CSVReader;
 import java.io.StringReader;
 
-public class CountGoodRecordsMapper extends Mapper<LongWritable, Text, Text, Text> {
+public class IncomeMapper1 extends Mapper<LongWritable, Text, Text, Text> {
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         try (CSVReader reader = new CSVReader(new StringReader(value.toString()));) {
