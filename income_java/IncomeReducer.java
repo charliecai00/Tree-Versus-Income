@@ -9,7 +9,7 @@ public class IncomeReducer extends Reducer<Text, Text, Text, Text> {
     @Override
     public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
         ArrayList<String> zipcode = new ArrayList<String>();
-        ArrayList<String> amount = new ArrayList<String>();
+        String amount = "";
 
         for (Text value : values) {
             String[] pair = value.toString().split(",");
@@ -17,15 +17,15 @@ public class IncomeReducer extends Reducer<Text, Text, Text, Text> {
             String type = pair[1];
 
             if (type.equals("Z")) {
-                zipcode.add(data);
-              } else {
-                amount.add(data);
-              }
+              zipcode.add(data);
+            } 
+            else {
+              amount = data;
+            }
         }
 
         for (String i : zipcode) {
-            for (String j : amount) {
-              context.write(new Text(i), new Text(j));
+              context.write(new Text(i), new Text(amount));
             }
         }
 
