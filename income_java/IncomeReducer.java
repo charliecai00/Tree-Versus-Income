@@ -8,8 +8,8 @@ import java.util.ArrayList;
 public class IncomeReducer extends Reducer<Text, Text, Text, Text> {
     @Override
     public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-        ArrayList<String> zipcode = new ArrayList<>();
-        ArrayList<String> amount = new ArrayList<>();
+        ArrayList<String> zipcode = new ArrayList<String>();
+        ArrayList<String> amount = new ArrayList<String>();
 
         for (Text value : values) {
             String[] pair = value.toString().split(",");
