@@ -1,173 +1,65 @@
-Astoria,11101
-Astoria,11102
-Astoria,11103
-Astoria,11105
-Astoria,11106
-Battery Park/Tribeca,10280
-Battery Park/Tribeca,10004
-Battery Park/Tribeca,10006
-Battery Park/Tribeca,10282
-Battery Park/Tribeca,10281
-Battery Park/Tribeca,10279
-Battery Park/Tribeca,10270
-Battery Park/Tribeca,10007
-Battery Park/Tribeca,10013
-Bay Ridge,11209
-Bayside,11360
-Bayside,11361
-Bayside,11364
-Bedford Park,10458
-Bedford Park,10468
-Bedford Stuyvesant,11205
-Bedford Stuyvesant,11243
-Bensonhurst,11214
-Bensonhurst,11223
-Bensonhurst,11230
-Borough Park,11204
-Borough Park,11219
-Brownsville,11212
-Bushwick,11221
-Bushwick,11237
-Bushwick,11207
-Canarsie,11241
-Canarsie,11234
-Canarsie,11247
-Central Harlem,10026
-Central Harlem,10030
-Central Harlem,10001
-Central Harlem,10031
-Chelsea/Clinton,10116
-Chelsea/Clinton,10060
-Chelsea/Clinton,10117
-Chelsea/Clinton,12512
-Chelsea/Clinton,10121
-Chelsea/Clinton,10018
-Chelsea/Clinton,10107
-Chelsea/Clinton,10036
-Chelsea/Clinton,10019
-Chelsea/Clinton,13323
-Concourse/Highbridge,10451
-Concourse/Highbridge,10452
-Coney Island,11224
-Coney Island,11218
-Coney Island,11252
-Crown Heights North,11238
-Crown Heights North,11216
-Crown Heights North,11233
-Crown Heights South,11225
-Crown Heights South,11213
-East Flatbush,11203
-East Flatbush,11236
-East Harlem,10029
-East Harlem,10035
-East New York,11208
-East New York,11239
-East Tremont,10457
-East Tremont,10460
-Elmhurst/Corona,14701
-Elmhurst/Corona,11368
-Flatbush/Midwood,11226
-Flatbush/Midwood,11210
-Flushing,11354
-Flushing,11355
-Flushing,11352
-Flushing,11351
-Flushing,11367
-Flushing,11358
-Flushing,11381
-Flushing,11371
-Flushing,11356
-Flushing,11386
-Fresh Meadows/Briarwood,11365
-Fresh Meadows/Briarwood,11366
-Fresh Meadows/Briarwood,11435
-Greenwich Village,10012
-Greenwich Village,10003
-Greenwich Village,10119
-Greenwich Village,10011
-Greenwich Village,10014
-Howard Beach,11414
-Hunts Point,10474
-Jackson Heights,11372
-Jamaica/St. Albans,11432
-Jamaica/St. Albans,11433
-Jamaica/St. Albans,11434
-Jamaica/St. Albans,11436
-Jamaica/St. Albans,11412
-Lower East Side,10002
-Manhattanville,10027
-Midtown Business District,10016
-Midtown Business District,10017
-Midtown Business District,10022
-Morrisania,10456
-Morrisania,10459
-Mott Haven,10454
-Mott Haven,10455
-Mott Haven,10037
-Murray Hill/Stuyvesant,10165
-Murray Hill/Stuyvesant,10158
-Murray Hill/Stuyvesant,10172
-Murray Hill/Stuyvesant,10177
-Murray Hill/Stuyvesant,10176
-Murray Hill/Stuyvesant,10175
-Park Slope,11215
-Park Slope,11202
-Pelham Parkway,10461
-Pelham Parkway,10467
-Queens Village,11427
-Queens Village,11428
-Queens Village,11429
-Rego Park/Forest Hills,11374
-Rego Park/Forest Hills,11375
-Ridgewood/Glendale,11385
-Riverdale,10463
-Riverdale,10471
-Sheepshead Bay,11229
-Sheepshead Bay,11235
-South Beach,10305
-St. George,10301
-Sunnyside/Woodside,11377
-Sunset Park,11220
-Sunset Park,11232
-The Rockaways,11693
-The Rockaways,11691
-The Rockaways,11694
-The Rockaways,11695
-The Rockaways,11690
-The Rockaways,11518
-The Rockaways,11697
-The Rockaways,11692
-Throgs Neck,10465
-Tottenville,10307
-Tottenville,10309
-Tottenville,10314
-Tottenville,10313
-Tottenville,10311
-Tottenville,10306
-Tottenville,10312
-Tottenville,10304
-Tottenville,10303
-Tottenville,10308
-Tottenville,10302
-Tottenville,10310
-Unionport/Soundview,10462
-Unionport/Soundview,10472
-Unionport/Soundview,10473
-University Heights,10453
-Upper East Side,10021
-Upper East Side,10028
-Upper East Side,10065
-Upper East Side,10075
-Upper East Side,10128
-Upper West Side,10023
-Upper West Side,10024
-Upper West Side,10025
-Upper West Side,10069
-Upper West Side,10133
-Washington Heights,10033
-Washington Heights,10032
-Washington Heights,10040
-Washington Heights,10039
-Williamsbridge,10466
-Williamsbridge,10469
-Woodhaven,11421
+Riverdale,69235.14898
+Williamsbridge,53255.73583
+Throgs Neck,57056.51172
+Pelham Parkway,51104.05692
+Morrisania,26979.00217
+East Tremont,26979.00217
+Bedford Park,35830.27778
+University Heights,27128.20618
+Concourse/Highbridge,29310.17463
+Unionport/Soundview,41268.9323
+Mott Haven,27381.74082
+Hunts Point,27381.74082
+Washington Heights,50828.08559
+Manhattanville,54614.27762
+Central Harlem,51652.63407
+East Harlem,33721.22858
+Upper East Side,114935.32825
+Upper West Side,113349.05402
+Chelsea/Clinton,114736.76352
+Midtown Business District,114736.76352
+Murray Hill/Stuyvesant,119870.279
+Lower East Side,47417.70816
+Battery Park/Tribeca,137034.34957
+Greenwich Village,137034.34957
+Tottenville,91101.95052
+South Beach,82874.41499
+St. George,62692.60914
+Williamsburg/Greenpoint,75282.95973
+Bushwick,48455.40524
+Bedford Stuyvesant,44361.8305
+Fort Greene/Brooklyn Hts,97209.21851
+Park Slope,125050.91154
+Crown Heights North,51286.91597
+Brownsville,30357.96822
+East New York,39375.27536
+Canarsie,77512.04523
+East Flatbush,56454.0865
+Crown Heights South,50709.17111
+Sunset Park,50731.6078
+Bay Ridge,72221.47289
+Borough Park,48431.84671
+Flatbush/Midwood,55706.9446
+Sheepshead Bay,61037.90299
+Bensonhurst,56124.2671
+Coney Island,45189.74449
+Astoria,64705.18055
+Jackson Heights,60732.76396
+Flushing,56879.26184
+Bayside,88873.98685
+Queens Village,90920.2133
+Fresh Meadows/Briarwood,69962.09785
+Elmhurst/Corona,49063.43964
+Rego Park/Forest Hills,79573.97737
+Sunnyside/Woodside,67543.42229
+Ridgewood/Glendale,69883.56942
+Woodhaven,67837.34297
+Jamaica/St. Albans,65419.78924
+Howard Beach,75510.69217
+The Rockaways,58710.09603
+Bronx,39461.65663
+Brooklyn,57371.74726
+Manhattan,84782.65578
+Queens,67783.49491
+Staten Island,80348.0433
+New York City,62544.52696

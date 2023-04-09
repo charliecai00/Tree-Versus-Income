@@ -14,10 +14,8 @@ public class Income {
         job.setJarByClass(Income.class);
         job.setJobName("Income");
 
-        MultipleInputs.addInputPath(job, new Path(args[0]),TextInputFormat.class,IncomeMapper1.class);
-        
-        MultipleInputs.addInputPath(job,new Path(args[1]),TextInputFormat.class, IncomeMapper2.class);
-        
+        MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, IncomeMapper1.class);
+        MultipleInputs.addInputPath(job,new Path(args[1]), TextInputFormat.class, IncomeMapper2.class);
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
 
         job.setMapperClass(IncomeMapper1.class);
