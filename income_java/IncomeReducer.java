@@ -16,18 +16,20 @@ public class IncomeReducer extends Reducer<Text, Text, Text, Text> {
             String data = pair[0];
             String type = pair[1];
 
-            if (type.equals("Z")) {
+            if (type.contains("Z")) {
               zipcode.add(data);
             } 
             else {
-              amount = data;
+              amount += data;
             }
         }
-
+        
+        String value = "";
         for (String i : zipcode) {
-              context.write(new Text(i), new Text(amount));
-            }
+              value += i + ",";
         }
-
+        String keyword = String.format("%s,%s", amount, value);
+        context.write(new Text(keyword), new Text(""));
     }
+
 }

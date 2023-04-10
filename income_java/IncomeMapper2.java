@@ -12,7 +12,8 @@ import java.io.StringReader;
 public class IncomeMapper2 extends Mapper<LongWritable, Text, Text, Text> {
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        try (CSVReader reader = new CSVReader(new StringReader(value.toString()));) {
+        try {
+            CSVReader reader = new CSVReader(new StringReader(value.toString()));
             String[] line = reader.readNext();
             String city_name = line[0];
             for (int i = 1; i < line.length; i++) {

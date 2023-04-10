@@ -1,6 +1,5 @@
-rm *.class *.jar
+rm *class Income.jar
 hdfs dfs -rm -r hw8/income/output/
-cp ~/opencsv-5.7.1.jar ~/hw8/income
 
 javac -classpath opencsv-5.7.1.jar:`yarn classpath` -d . IncomeMapper1.java
 javac -classpath opencsv-5.7.1.jar:`yarn classpath` -d . IncomeMapper2.java
