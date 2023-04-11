@@ -26,10 +26,13 @@ public class IncomeReducer extends Reducer<Text, Text, Text, Text> {
         
         String value = "";
         for (String i : zipcode) {
-              value += i + ",";
+          value += i + ",";
         }
-        String keyword = String.format("%s,%s", amount, value);
-        context.write(new Text(keyword), new Text(""));
+        String keyword = value + amount;
+        context.write(key, new Text(keyword));
+        
+        
     }
 
 }
+
