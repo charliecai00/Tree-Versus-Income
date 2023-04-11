@@ -24,7 +24,7 @@ public class HealthReducer extends Reducer<Text, Text, Text, Text> {
 
         String res = String.format("Fair: %d, Good: %d, Poor: %d", fair, good, poor);
         
-        // Write the total count to reducer 
+        // Write the total count to reducer
         context.write(key, new Text(res));
     }
 }
