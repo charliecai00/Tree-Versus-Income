@@ -98,14 +98,6 @@ print('R-squared: %.2f' % r2)
 result.write('R-squared: %.2f\n' % r2)
 
 
-# # Select the relevant columns
-# df = final.select(['MedianIncome', 'Good'])
-# # Split the data into training and testing sets
-# (training_data, testing_data) = df.randomSplit([0.8, 0.2], seed=42)
-# # Assemble the features into a vector
-# assembler = VectorAssembler(inputCols=['MedianIncome'], outputCol='features')
-# training_data = assembler.transform(training_data)
-# testing_data = assembler.transform(testing_data)
 # Select columns for input features and target variable
 assembler = VectorAssembler(inputCols=["MedianIncome"], outputCol="features")
 data = assembler.transform(final).select("Good", "features")
@@ -205,12 +197,6 @@ result.write('R-squared: %.2f\n' % r2)
 result.write("\n\n\nDecisionTree Regresser Analysis\n\n")
 
 
-# # Create a vector assembler
-# assembler = VectorAssembler(inputCols=['MedianIncome'], outputCol='features')
-# # Transform the data using the vector assembler
-# data = assembler.transform(final).select("TreeDBH", "features")
-# # Split the data into training and testing sets
-# (trainingData, testData) = df.randomSplit([0.8, 0.2], seed=42)
 # Create a decision tree model
 dt = DecisionTreeRegressor(maxDepth=15, minInstancesPerNode=10, seed=42, featuresCol="features", labelCol="TreeDBH")
 # Train the model
@@ -232,12 +218,6 @@ print('R-squared: %.2f' % r2)
 result.write('R-squared: %.2f\n' % r2)
 
 
-# # Create a vector assembler
-# assembler = VectorAssembler(inputCols=['MedianIncome'], outputCol='features')
-# # Transform the data using the vector assembler
-# data = assembler.transform(final).select("Good", "features")
-# # Split the data into training and testing sets
-# (trainingData, testData) = df.randomSplit([0.8, 0.2], seed=42)
 # Create a decision tree model
 dt = DecisionTreeRegressor(maxDepth=15, minInstancesPerNode=23, seed=42, featuresCol="features", labelCol="Good")
 # Train the model
@@ -259,12 +239,6 @@ print('R-squared: %.2f' % r2)
 result.write('R-squared: %.2f\n' % r2)
 
 
-# # Create a vector assembler
-# assembler = VectorAssembler(inputCols=['MedianIncome'], outputCol='features')
-# # Transform the data using the vector assembler
-# data = assembler.transform(final).select("Fair", "features")
-# # Split the data into training and testing sets
-# (trainingData, testData) = df.randomSplit([0.8, 0.2], seed=42)
 # Create a decision tree model
 dt = DecisionTreeRegressor(maxDepth=15, minInstancesPerNode=22, seed=42, featuresCol="features", labelCol="Fair")
 # Train the model
@@ -286,12 +260,6 @@ print('R-squared: %.2f' % r2)
 result.write('R-squared: %.2f\n' % r2)
 
 
-# # Create a vector assembler
-# assembler = VectorAssembler(inputCols=['MedianIncome'], outputCol='features')
-# # Transform the data using the vector assembler
-# data = assembler.transform(final).select("Poor", "features")
-# # Split the data into training and testing sets
-# (trainingData, testData) = df.randomSplit([0.8, 0.2], seed=42)
 # Create a decision tree model
 dt = DecisionTreeRegressor(maxDepth=15, minInstancesPerNode=22, seed=42, featuresCol="features", labelCol="Poor")
 # Train the model
