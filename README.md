@@ -1,16 +1,16 @@
 # Steps to run the application
 
-## Data ingest
+## Raw data
 1. Download tree data [here](https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/pi5s-9p35)
 2. Download medium income [here](https://data.cccnewyork.org/data/download#0,8/66), select all Income
 3. Get city-zips [here](./data_ingest/city_zips.csv)
-4. OR use the csv files saved in ./data_ingest
+4. OR use the csv files saved in ./raw_data
 
 ## Prerequisites
 - Upload [opencsv](./opencsv-5.7.1.jar) to NYU's Dataproc and HDFS
 
 ## Cleaning code
-- Upload all files in ./data_ingest to to NYU's Dataproc and HDFS
+- Upload all files in ./raw_data to to NYU's Dataproc and HDFS
 - lc4181 <br>
     - Run Clean with the following command <br>
     ```sh install.sh```
@@ -33,6 +33,12 @@
     - Run Health with the following command <br>
     ```sh health_install.sh```
     - The proof of success run are saved as Part1_Proof*.png
+
+## Data ingest
+- Upload all *.csv in ./data_ingest to NYU's Dataproc and HDFS
+- Run ./data_ingest/data_ingest.py on NYU's Dataproc <br>
+```spark-submit data_ingest.py```
+- The results are saved [here](./data_ingest/result.csv), and proof of success run are saved as output*.png
 
 ## Analytics
 - Upload all *.csv in ./ana_code to NYU's Dataproc and HDFS
