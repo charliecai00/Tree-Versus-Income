@@ -32,7 +32,7 @@
     ```sh dbh_install.sh```
     - Run Health with the following command <br>
     ```sh health_install.sh```
-    - The proof of success run are saved as output*.png
+    - The proof of success run are saved as Part1_Proof*.png
 
 ## Analytics
 - Upload all *.csv in ./ana_code to NYU's Dataproc and HDFS
