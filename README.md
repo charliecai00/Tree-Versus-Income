@@ -56,5 +56,7 @@ This project aims to explore the relationship between the quality of trees and h
 ```yarn logs -applicationId <application ID>```
 - The results are saved [here](./ana_code/result.txt), and proof of success run [here](./ana_code/output1.png) and [here](./ana_code/output2.png)
 
+## [Project conclusion found here](./ana_code/result.txt)
+
 ## Collaborators
 Contributor to this project: Charlie Cai(lc4181@nyu.edu), Stephen Zhang (stephen.zhang@nyu.edu)
