@@ -12,7 +12,7 @@ This project aims to explore the relationship between the quality of trees and h
 - Upload [opencsv](./opencsv-5.7.1.jar) to NYU's Dataproc and HDFS
 
 ## Raw Data
-1. Download tree data [here](https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/pi5s-9p35)
+1. Download tree data [here](https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/uvpi-gqnh)
 2. Download medium income [here](https://data.cccnewyork.org/data/download#0,8/66), select all Income
 3. Get city-zips [here](./data_ingest/city_zips.csv)
 4. OR use the csv files saved in ./raw_data
