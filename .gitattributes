@@ -1,1 +1,1 @@
-data_ingest/tree_data.csv filter=lfs diff=lfs merge=lfs -text
+raw_data/tree_data.csv filter=lfs diff=lfs merge=lfs -text
