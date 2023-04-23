@@ -16,7 +16,9 @@
     ```sh install.sh```
     - The proof of success run are saved as output*.png
 - cz1906 <br>
-
+    - Run Clean with the following command <br>
+    ```sh install.sh```
+    - The proof of success run are saved as Proof_*.png
 
 ## Profiling code
 - lc4181 <br>
