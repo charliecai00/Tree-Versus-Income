@@ -23,4 +23,4 @@ df = df.join(df3, on='Zip', how='outer')
 # Drop rows with null values
 final = df.dropna()
 
-final.coalesce(1).write.format("csv").save("final.csv")
+final.coalesce(1).write.format("csv").save("output")
