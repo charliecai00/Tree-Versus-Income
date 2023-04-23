@@ -11,7 +11,7 @@
 
 ## Cleaning code
 - lc4181 <br>
-    - Run Clean with the following command
+    - Run Clean with the following command <br>
     ```sh install.sh```
     - The results are saved as ouput*.png
 - cz1906 <br>
