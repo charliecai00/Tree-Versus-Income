@@ -1,0 +1,95 @@
+Correlation btw income & dbh: -0.1415263782334827
+
+
+
+Correlation Analysis
+
+Correlation btw income & tree with good health: -0.11359101478182092
+
+Correlation btw income & tree with fair health: -0.08402433127226165
+
+Correlation btw income & tree with poor health: -0.06168291456249483
+
+
+
+
+
+# ---------------------------------- DBH ---------------------------------- #
+Regression Analysis
+
+
+Median Income VS. Tree DBH:
+
+Mean squared error: 8.55
+Coefficient of determination (R-squared): -0.06
+Intercept: 11.35
+Slope: -0.00
+R-squared: -0.06
+
+
+
+
+# ---------------------------------- Good ---------------------------------- #
+Median Income VS. Health of Trees (Good):
+
+Mean squared error: 6922436.55
+Coefficient of determination (R-squared): -0.08
+Intercept: 3977.48
+Slope: -0.01
+R-squared: -0.08
+
+
+
+
+# ---------------------------------- Fair ---------------------------------- #
+Median Income VS. Health of Trees (Fair):
+
+Mean squared error: 178350.16
+Coefficient of determination (R-squared): 0.01
+Intercept: 640.80
+Slope: -0.00
+R-squared: 0.01
+
+
+
+
+# ---------------------------------- Poor ---------------------------------- #
+Median Income VS. Health of Trees (Poor):
+
+Mean squared error: 15463.40
+Coefficient of determination (R-squared): -0.03
+Intercept: 187.25
+Slope: -0.00
+R-squared: -0.03
+
+
+
+
+Median Income VS. Tree DBH:
+
+Mean Squared Error = 3.49
+R-squared: 0.57
+
+
+
+
+Median Income VS. Health of Trees (Good):
+
+Mean Squared Error = 6710612.97
+R-squared: -0.04
+
+
+
+
+Median Income VS. Health of Trees (Fair):
+
+Mean Squared Error = 168645.94
+R-squared: 0.06
+
+
+
+
+Median Income VS. Health of Trees (Poor):
+
+Mean Squared Error = 13857.65
+R-squared: 0.08
