@@ -38,6 +38,8 @@
 - Upload all *.csv in ./data_ingest to NYU's Dataproc and HDFS
 - Run ./data_ingest/data_ingest.py on NYU's Dataproc <br>
 ```spark-submit data_ingest.py```
+- View results on HDFS <br>
+```hd -cat output/part-00000-id.csv```
 - The results are saved [here](./data_ingest/result.csv), and proof of success run are saved as output*.png
 
 ## Analytics
