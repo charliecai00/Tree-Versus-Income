@@ -5,10 +5,20 @@
 2. Download medium income [here](https://data.cccnewyork.org/data/download#0,8/66)
 3. Get city-zips [here](./data_ingest/city_zips.csv)
 
+## Prerequisites
+- Upload [opencsv](./opencsv-5.7.1.jar) to NYU's Dataproc and HDFS
+- Upload all files in ./data_ingest to to NYU's Dataproc and HDFS
+
 ## Cleaning code
+- lc4181 <br>
+    - Run Clean with the following command
+    ```sh install.sh```
+    - The results are saved as ouput*.png
+- cz1906 <br>
 
 
 ## Profiling code
+- lc4181 <br>
 
 ## Analytics
 - Run ./ana_code/analysis.py on NYU's Dataproc <br>
@@ -17,4 +27,4 @@
 ```yarn logs -applicationId <application ID>```
 - The results are saved [here](./ana_code/result.txt), and proof of success run [here](./ana_code/output1.png) and [here](./ana_code/output2.png)
 
-## [Link to Github]()
+## [Link to Github](https://github.com/charliecai00/Tree-Versus-Income)

@@ -160,7 +160,7 @@ cython_debug/
 #.idea/
 
 # Compiled class file
-*.class
+# *.class
 
 # Log file
 *.log
@@ -172,7 +172,7 @@ cython_debug/
 .mtj.tmp/
 
 # Package Files #
-*.jar
+# *.jar
 *.war
 *.nar
 *.ear
