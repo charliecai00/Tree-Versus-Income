@@ -25,7 +25,7 @@ df2 = spark.read.csv('dbh.csv', header=False, inferSchema=True)
 df2 = df2.toDF('Zip', 'TreeDBH')
 
 # Read the health_summary.csv file into a PySpark DataFrame
-df3 = spark.read.csv('health_copy.csv', header=False, inferSchema=True)
+df3 = spark.read.csv('health.csv', header=False, inferSchema=True)
 df3 = df3.toDF('Zip', 'Good', 'Fair', 'Poor')
 
 

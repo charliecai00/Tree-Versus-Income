@@ -7,9 +7,9 @@
 
 ## Prerequisites
 - Upload [opencsv](./opencsv-5.7.1.jar) to NYU's Dataproc and HDFS
-- Upload all files in ./data_ingest to to NYU's Dataproc and HDFS
 
 ## Cleaning code
+- Upload all files in ./data_ingest to to NYU's Dataproc and HDFS
 - lc4181 <br>
     - Run Clean with the following command <br>
     ```sh install.sh```
@@ -21,6 +21,7 @@
 - lc4181 <br>
 
 ## Analytics
+- Upload all *.csv in ./ana_code to NYU's Dataproc and HDFS
 - Run ./ana_code/analysis.py on NYU's Dataproc <br>
 ```spark-submit analysis.py```
 - View YARN logs for results <br>
