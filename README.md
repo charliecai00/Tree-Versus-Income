@@ -2,8 +2,9 @@
 
 ## Data ingest
 1. Download tree data [here](https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/pi5s-9p35)
-2. Download medium income [here](https://data.cccnewyork.org/data/download#0,8/66)
+2. Download medium income [here](https://data.cccnewyork.org/data/download#0,8/66), select all Income
 3. Get city-zips [here](./data_ingest/city_zips.csv)
+4. OR use the csv files saved in ./data_ingest
 
 ## Prerequisites
 - Upload [opencsv](./opencsv-5.7.1.jar) to NYU's Dataproc and HDFS
@@ -13,12 +14,23 @@
 - lc4181 <br>
     - Run Clean with the following command <br>
     ```sh install.sh```
-    - The results are saved as ouput*.png
+    - The proof of success run are saved as output*.png
 - cz1906 <br>
 
 
 ## Profiling code
 - lc4181 <br>
+    - Upload all ./profiling_code/lc4181/*.csv files to NYU's Dataproc and HDFS
+    - Run Income with the following command <br>
+    ```sh install.sh```
+    - The proof of success run are saved as output*.png
+- cz1906 <br>
+    - Upload ./profiling_code/cz1906/tree_data_cleaned.csv files to NYU's Dataproc and HDFS
+    - Run DBH with the following command <br>
+    ```sh dbh_install.sh```
+    - Run Health with the following command <br>
+    ```sh health_install.sh```
+    - The proof of success run are saved as output*.png
 
 ## Analytics
 - Upload all *.csv in ./ana_code to NYU's Dataproc and HDFS

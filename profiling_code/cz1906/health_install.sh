@@ -1,12 +1,11 @@
-rm *.class *.jar
-hdfs dfs -rm -r hw8/health/output/
-cp ~/opencsv-5.7.1.jar ~/hw8/health
+rm *.class Health.jar
+hdfs dfs -rm -r ./output/
 
 javac -classpath opencsv-5.7.1.jar:`yarn classpath` -d . HealthMapper.java
 javac -classpath opencsv-5.7.1.jar:`yarn classpath` -d . HealthReducer.java
 javac -classpath opencsv-5.7.1.jar:`yarn classpath`:. -d . Health.java
 
 jar -cvf Health.jar *.class
-hadoop jar Health.jar Health hw8/tree_cleaned.csv hw8/health/output/
+hadoop jar Health.jar Health tree_data_cleaned.csv ./output/
 
-hdfs dfs -cat hw8/health/output/part-r-00000
+hdfs dfs -cat ./output/part-r-00000
