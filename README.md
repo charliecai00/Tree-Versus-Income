@@ -62,6 +62,6 @@ This project aims to explore the relationship between the quality of trees and h
 - [Our result can be found at here.](./ana_code/result.txt)
 
 ## Paper
-- For more details of this project, one can look upt the full paper at [here.](Tree-Versus-Income/Paper.pdf)
+- For more details of this project, one can look upt the full paper at [here.](./Paper.pdf)
 ## Collaborators
 Contributor to this project: Charlie Cai(lc4181@nyu.edu), Stephen Zhang (stephen.zhang@nyu.edu)
